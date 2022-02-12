@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		6377C7A027B59DF300C36ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6377C79F27B59DF300C36ECE /* AppDelegate.swift */; };
 		6377C7A227B59DF300C36ECE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6377C7A127B59DF300C36ECE /* SceneDelegate.swift */; };
-		6377C7A427B59DF300C36ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6377C7A327B59DF300C36ECE /* ViewController.swift */; };
+		6377C7A427B59DF300C36ECE /* SingInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6377C7A327B59DF300C36ECE /* SingInVC.swift */; };
 		6377C7A727B59DF300C36ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6377C7A527B59DF300C36ECE /* Main.storyboard */; };
 		6377C7AA27B59DF300C36ECE /* VKProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6377C7A827B59DF300C36ECE /* VKProject.xcdatamodeld */; };
 		6377C7AC27B59DF500C36ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6377C7AB27B59DF500C36ECE /* Assets.xcassets */; };
 		6377C7AF27B59DF500C36ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6377C7AD27B59DF500C36ECE /* LaunchScreen.storyboard */; };
+		6377C7BA27B59FE800C36ECE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6377C7B927B59FE800C36ECE /* MainViewModel.swift */; };
+		6377C7BD27B5A1DD00C36ECE /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6377C7BC27B5A1DD00C36ECE /* WebService.swift */; };
+		6377C7C027B5A21500C36ECE /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6377C7BF27B5A21500C36ECE /* ProductModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6377C79C27B59DF300C36ECE /* VKProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6377C79F27B59DF300C36ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6377C7A127B59DF300C36ECE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6377C7A327B59DF300C36ECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6377C7A327B59DF300C36ECE /* SingInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInVC.swift; sourceTree = "<group>"; };
 		6377C7A627B59DF300C36ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6377C7A927B59DF300C36ECE /* VKProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VKProject.xcdatamodel; sourceTree = "<group>"; };
 		6377C7AB27B59DF500C36ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6377C7AE27B59DF500C36ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6377C7B027B59DF500C36ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6377C7B927B59FE800C36ECE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		6377C7BC27B5A1DD00C36ECE /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		6377C7BF27B5A21500C36ECE /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,59 @@
 		6377C79E27B59DF300C36ECE /* VKProject */ = {
 			isa = PBXGroup;
 			children = (
+				6377C7BE27B5A20500C36ECE /* Models */,
+				6377C7BB27B5A00300C36ECE /* Service */,
+				6377C7B827B59EB900C36ECE /* Controllers */,
+				6377C7B727B59E8C00C36ECE /* Views */,
+				6377C7B627B59E7E00C36ECE /* ViewModels */,
 				6377C79F27B59DF300C36ECE /* AppDelegate.swift */,
 				6377C7A127B59DF300C36ECE /* SceneDelegate.swift */,
-				6377C7A327B59DF300C36ECE /* ViewController.swift */,
-				6377C7A527B59DF300C36ECE /* Main.storyboard */,
 				6377C7AB27B59DF500C36ECE /* Assets.xcassets */,
 				6377C7AD27B59DF500C36ECE /* LaunchScreen.storyboard */,
 				6377C7B027B59DF500C36ECE /* Info.plist */,
 				6377C7A827B59DF300C36ECE /* VKProject.xcdatamodeld */,
 			);
 			path = VKProject;
+			sourceTree = "<group>";
+		};
+		6377C7B627B59E7E00C36ECE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6377C7B927B59FE800C36ECE /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6377C7B727B59E8C00C36ECE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6377C7A527B59DF300C36ECE /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6377C7B827B59EB900C36ECE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6377C7A327B59DF300C36ECE /* SingInVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6377C7BB27B5A00300C36ECE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6377C7BC27B5A1DD00C36ECE /* WebService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6377C7BE27B5A20500C36ECE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6377C7BF27B5A21500C36ECE /* ProductModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +190,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6377C7A427B59DF300C36ECE /* ViewController.swift in Sources */,
+				6377C7C027B5A21500C36ECE /* ProductModel.swift in Sources */,
+				6377C7BA27B59FE800C36ECE /* MainViewModel.swift in Sources */,
+				6377C7A427B59DF300C36ECE /* SingInVC.swift in Sources */,
+				6377C7BD27B5A1DD00C36ECE /* WebService.swift in Sources */,
 				6377C7A027B59DF300C36ECE /* AppDelegate.swift in Sources */,
 				6377C7AA27B59DF300C36ECE /* VKProject.xcdatamodeld in Sources */,
 				6377C7A227B59DF300C36ECE /* SceneDelegate.swift in Sources */,
