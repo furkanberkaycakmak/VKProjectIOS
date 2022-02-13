@@ -3,7 +3,15 @@
 //  VKProject
 //
 //  Created by Berkay ÇAKMAK on 10.02.2022.
+// MODELLER AYRI SWİFT DOSYASINA YAZILACAK, PSOT PRODUCT GİBİ.
+
+// nsobject kullanılabilir.
+
+// moya kullanılacak.
+// pods
+
 //
+
 
 import Foundation
 
@@ -16,40 +24,28 @@ class GetProductModel: Codable {
     let imgUrl : String
   }
 
-class PostProductModel : Codable {
-    /* {
-      "id": "string",
-      "name": "string",
-      "description": "string",
-      "imgUrl": "string"
-    }     DOLDURULARAK YOLLANACAK
-     */
-    
-    let id : String
-    let name : String
-    let description : String
-    let imgUrl : String
-    let _id : String
 
-}
-
-class GetProductDetailsModel: Codable {
+class GetProductDetailsRequestModel: Codable {
     
     /*
      "id": String
      
      DOLDURULARAK YOLLANACAK
      */
+}
+
+class GetProductDetailsResponseModel: Codable {
+    
     let currency : String
     let price : Double
     let id : String
     let name : String
     let description : String
     let imgUrl : String
-    
-    
-    
 }
+    
+    
+
 
 
 class UpdateProductModel: Codable {
