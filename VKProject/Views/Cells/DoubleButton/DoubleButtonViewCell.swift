@@ -1,13 +1,13 @@
 //
-//  DetailsTableViewCell.swift
+//  DoubleButtonViewCell.swift
 //  VKProject
 //
-//  Created by Berkay ÇAKMAK on 13.02.2022.
-// BUTONLAR OLUŞTURULACAK
+//  Created by Berkay ÇAKMAK on 14.02.2022.
+//
 
 import UIKit
 
-class DetailsTableViewCell: UITableViewCell {
+class DoubleButtonViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
