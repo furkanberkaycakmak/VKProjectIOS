@@ -10,37 +10,37 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="245" id="KGk-i7-Jjw" customClass="DoubleButtonViewCell" customModule="VKProject" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="444" height="245"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="DoubleButtonViewCell" customModule="VKProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="68"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="444" height="245"/>
+                <rect key="frame" x="0.0" y="0.0" width="300" height="68"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r52-Bc-AU5">
-                        <rect key="frame" x="286" y="107" width="124" height="31"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="tintColor" systemColor="labelColor"/>
-                        <buttonConfiguration key="configuration" style="filled" subtitle="Yönetici Girişi" cornerStyle="large"/>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="playback" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQe-Ze-4Kc">
-                        <rect key="frame" x="271" y="81" width="153" height="82"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="tintColor" systemColor="labelColor"/>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="filled" title="Kullanıcı Girişi" cornerStyle="large" titleAlignment="automatic"/>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="playback" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAE-lR-L6O">
-                        <rect key="frame" x="33" y="81" width="153" height="82"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="playback" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAE-lR-L6O">
+                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="68"/>
                         <color key="tintColor" systemColor="labelColor"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="filled" title="Yönetici Girişi" cornerStyle="large" titleAlignment="automatic"/>
                     </button>
+                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="playback" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQe-Ze-4Kc">
+                        <rect key="frame" x="186" y="0.0" width="114" height="68"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Kullanıcı Girişi" cornerStyle="large" titleAlignment="automatic"/>
+                    </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="VQe-Ze-4Kc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2RI-ET-6yo"/>
+                    <constraint firstAttribute="bottom" secondItem="GAE-lR-L6O" secondAttribute="bottom" id="Aen-DT-KVg"/>
+                    <constraint firstItem="GAE-lR-L6O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="N4K-TB-w10"/>
+                    <constraint firstItem="GAE-lR-L6O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hLd-9z-Mkj"/>
+                    <constraint firstAttribute="bottom" secondItem="VQe-Ze-4Kc" secondAttribute="bottom" id="sNl-n5-0qW"/>
+                    <constraint firstAttribute="trailing" secondItem="VQe-Ze-4Kc" secondAttribute="trailing" id="yWx-K7-GFQ"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="227.536231884058" y="46.540178571428569"/>
+            <point key="canvasLocation" x="123.18840579710145" y="-12.723214285714285"/>
         </tableViewCell>
     </objects>
     <resources>

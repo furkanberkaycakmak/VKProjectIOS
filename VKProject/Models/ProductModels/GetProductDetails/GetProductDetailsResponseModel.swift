@@ -10,7 +10,7 @@ import Foundation
 class GetProductDetailsResponseModel: Codable {
     
     let currency : String
-    let price : Double
+    let price : Int
     let id : String
     let name : String
     let description : String

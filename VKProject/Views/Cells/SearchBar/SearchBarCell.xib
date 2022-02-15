@@ -16,12 +16,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="212-z0-GOY">
+                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="212-z0-GOY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                         <textInputTraits key="textInputTraits"/>
                     </searchBar>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="212-z0-GOY" secondAttribute="trailing" id="DfX-1L-T6I"/>
+                    <constraint firstAttribute="bottom" secondItem="212-z0-GOY" secondAttribute="bottom" id="V3P-m1-qbj"/>
+                    <constraint firstItem="212-z0-GOY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fOy-jG-HOa"/>
+                    <constraint firstItem="212-z0-GOY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hkc-r6-oXQ"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <point key="canvasLocation" x="139" y="72"/>

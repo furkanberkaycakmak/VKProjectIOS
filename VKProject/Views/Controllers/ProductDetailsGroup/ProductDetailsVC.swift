@@ -8,10 +8,15 @@
 import UIKit
 
 class ProductDetailsVC: UIViewController {
+    
+    private let viewModel = ProductDetailViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        viewModel.delegate = self
+        viewModel.loadProductDetail(productId: "HI333")
+        
         // Do any additional setup after loading the view.
     }
 
@@ -26,4 +31,11 @@ class ProductDetailsVC: UIViewController {
     }
     */
 
+}
+
+extension ProductDetailsVC: ProductDetailViewModelProtocol {
+    
+    func getProductDetail() {
+        print(viewModel.productDetail)
+    }
 }

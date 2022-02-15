@@ -9,21 +9,26 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="498" id="KGk-i7-Jjw" customClass="LogoViewCell" customModule="VKProject" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="554" height="498"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="306" id="KGk-i7-Jjw" customClass="LogoViewCell" customModule="VKProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="306"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="554" height="498"/>
+                <rect key="frame" x="0.0" y="0.0" width="401" height="306"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AdidasLogo" translatesAutoresizingMaskIntoConstraints="NO" id="rLV-lT-DfB">
-                        <rect key="frame" x="112" y="135" width="342" height="229"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AdidasLogo" translatesAutoresizingMaskIntoConstraints="NO" id="rLV-lT-DfB">
+                        <rect key="frame" x="0.0" y="0.0" width="401" height="306"/>
                     </imageView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="rLV-lT-DfB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="B6z-dE-aiM"/>
+                    <constraint firstAttribute="trailing" secondItem="rLV-lT-DfB" secondAttribute="trailing" id="TDb-Vr-aes"/>
+                    <constraint firstItem="rLV-lT-DfB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="c8B-28-WId"/>
+                    <constraint firstAttribute="bottom" secondItem="rLV-lT-DfB" secondAttribute="bottom" id="kMI-jU-97r"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="146.37681159420291" y="105.80357142857143"/>
+            <point key="canvasLocation" x="35.507246376811594" y="170.08928571428569"/>
         </tableViewCell>
     </objects>
     <resources>

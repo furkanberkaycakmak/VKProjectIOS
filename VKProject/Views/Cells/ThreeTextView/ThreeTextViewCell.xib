@@ -9,36 +9,43 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="490" id="KGk-i7-Jjw" customClass="ThreeTextViewCell" customModule="VKProject" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="454" height="490"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="168" id="KGk-i7-Jjw" customClass="ThreeTextViewCell" customModule="VKProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="168"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="454" height="490"/>
+                <rect key="frame" x="0.0" y="0.0" width="434" height="168"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ürün İsmi" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l4v-NB-h2l">
-                        <rect key="frame" x="65" y="104" width="324" height="34"/>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ürün İsmi" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l4v-NB-h2l">
+                        <rect key="frame" x="0.0" y="0.0" width="434" height="34"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ürün Açıklaması" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vTq-uY-SDC">
-                        <rect key="frame" x="65" y="166" width="324" height="34"/>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ürün Açıklaması" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vTq-uY-SDC">
+                        <rect key="frame" x="0.0" y="64" width="434" height="34"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ürün Fiyatı" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdh-ac-TLr">
-                        <rect key="frame" x="65" y="228" width="324" height="34"/>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ürün Fiyatı" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdh-ac-TLr">
+                        <rect key="frame" x="0.0" y="128" width="434" height="34"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="vTq-uY-SDC" firstAttribute="top" secondItem="l4v-NB-h2l" secondAttribute="bottom" constant="30" id="1OJ-RK-eor"/>
-                    <constraint firstItem="zdh-ac-TLr" firstAttribute="top" secondItem="vTq-uY-SDC" secondAttribute="bottom" constant="30" id="slz-nR-PK4"/>
+                    <constraint firstAttribute="trailing" secondItem="vTq-uY-SDC" secondAttribute="trailing" id="2px-dJ-hkl"/>
+                    <constraint firstItem="vTq-uY-SDC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="B1F-RT-tH4"/>
+                    <constraint firstItem="zdh-ac-TLr" firstAttribute="top" secondItem="vTq-uY-SDC" secondAttribute="bottom" constant="30" id="EPq-y7-67X"/>
+                    <constraint firstItem="vTq-uY-SDC" firstAttribute="top" secondItem="l4v-NB-h2l" secondAttribute="bottom" constant="30" id="TDo-wV-qi9"/>
+                    <constraint firstItem="l4v-NB-h2l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="U2j-0h-fWR"/>
+                    <constraint firstItem="zdh-ac-TLr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZnI-9N-Syy"/>
+                    <constraint firstAttribute="trailing" secondItem="zdh-ac-TLr" secondAttribute="trailing" id="b1G-Oe-Uy2"/>
+                    <constraint firstItem="l4v-NB-h2l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uxS-Yf-iGX"/>
+                    <constraint firstAttribute="trailing" secondItem="l4v-NB-h2l" secondAttribute="trailing" id="vhl-VM-z4H"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="134.78260869565219" y="110.49107142857143"/>
+            <point key="canvasLocation" x="120.28985507246378" y="-0.6696428571428571"/>
         </tableViewCell>
     </objects>
 </document>
