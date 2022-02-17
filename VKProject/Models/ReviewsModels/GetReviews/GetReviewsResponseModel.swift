@@ -7,6 +7,14 @@
 
 import Foundation
 
+
+struct GetReviewsResponseModel: Codable {
+       
+       let productId : String
+       let locale : String
+       let rating : Int
+       let text : String
+}
 /*
  RESPONSE YAPISI ;
  {

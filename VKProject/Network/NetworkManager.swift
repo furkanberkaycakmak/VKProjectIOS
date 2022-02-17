@@ -10,13 +10,29 @@ import Moya
 protocol Networkable {
     var provider: MoyaProvider<ProductAPI> { get }
     func fetchProductDetail(productId: String, completion: @escaping (Result<GetProductDetailsResponseModel, Error>) -> ())
+    func getProductAll(completion: @escaping (Result<[GetProductModel], Error>) -> ())
+    func getReviewsAll(reviewsId: String, completion: @escaping (Result<[GetReviewsResponseModel], Error>) -> ())
 }
 
 class NetworkManager: Networkable {
-    var provider = MoyaProvider<ProductAPI>(plugins: [NetworkLoggerPlugin()])
 
-    func fetchProductDetail(productId: String, completion: @escaping (Result<GetProductDetailsResponseModel, Error>) -> ()) {
+    
+    var provider = MoyaProvider<ProductAPI>(plugins: [NetworkLoggerPlugin()])
+    
+
+    func fetchProductDetail(productId: String, completion: @escaping (Result<GetProductDetailsResponseModel, Error>) -> ())
+    {
         request(target: .product(productId: productId), completion: completion)
+    }
+    
+    func getProductAll(completion: @escaping (Result<[GetProductModel], Error>) -> ())
+    {
+        request(target: .getproducts, completion: completion)
+    }
+    
+    func getReviewsAll(reviewsId: String, completion: @escaping (Result<[GetReviewsResponseModel], Error>) -> ())
+    {
+        request(target: .getreviews(reviewsId: reviewsId), completion: completion)
     }
 }
 

@@ -7,13 +7,7 @@
 
 import Foundation
 
+class GetReviewsModel: Codable {
+    let id : String
+}
 
-/*
- ürün id ile gidilecek
- 
- 
- 
-
- 
- 
- */

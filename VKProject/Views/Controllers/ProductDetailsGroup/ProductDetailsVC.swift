@@ -34,8 +34,12 @@ class ProductDetailsVC: UIViewController {
 }
 
 extension ProductDetailsVC: ProductDetailViewModelProtocol {
+    func getReviewsAll() {
+        //
+    }
+    
     
     func getProductDetail() {
-        print(viewModel.productDetail)
+        //print(viewModel.productDetail)
     }
 }

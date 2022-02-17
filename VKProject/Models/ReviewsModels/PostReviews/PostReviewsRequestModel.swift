@@ -8,9 +8,10 @@
 import Foundation
 
 
-/*
- 
- ID İLE GİDİLİYOR
- 
-
- */
+class PostReviewsModel: Codable {
+    let id : String
+    let productId : String
+    let locale : String
+    let rating : Int
+    let text : String
+}

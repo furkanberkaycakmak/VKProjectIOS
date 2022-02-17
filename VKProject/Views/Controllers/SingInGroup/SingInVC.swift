@@ -15,17 +15,28 @@ class SingInVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         viewModel.delegate = self
-        viewModel.loadProductDetail(productId: "HI333")
+        viewModel.loadAllReviews(reviewsId: "HI333")
         
     }
 
 
 }
 
-extension SingInVC: ProductDetailViewModelProtocol {
+/*extension SingInVC: ProductDetailViewModelProtocol {
     
     func getProductDetail() {
         print(viewModel.productDetail?.id as! String)
     }
+
+}*/
+extension SingInVC: ProductDetailViewModelProtocol{
+    func getProductDetail() {
+        print(viewModel.productDetail)
+    }
+    
+    func getReviewsAll() {
+        print(viewModel.reviewsAll)
+    }
+    
 }
 

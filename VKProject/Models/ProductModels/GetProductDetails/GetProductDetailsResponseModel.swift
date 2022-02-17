@@ -7,7 +7,7 @@
 
 import Foundation
 
-class GetProductDetailsResponseModel: Codable {
+struct GetProductDetailsResponseModel: Codable {
     
     let currency : String
     let price : Int
