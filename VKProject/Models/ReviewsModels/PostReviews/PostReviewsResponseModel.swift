@@ -7,13 +7,17 @@
 
 import Foundation
 
-/*
- RESPONSE BODY ;
- {
-   "productId": "HI333",
-   "locale": "TURKEY",
-   "rating": 2,
-   "text": "stringQWE"
- }
-
- */
+struct PostReviewsResponseResult: Codable {
+    let productId : String?
+    let locale : String?
+    let rating : Int?
+    let text : String?
+    
+    
+    enum CodingKeys: String, CodingKey {
+        case productId
+        case locale
+        case rating
+        case text
+    }
+}

@@ -7,20 +7,17 @@
 
 import Foundation
 
-
 struct GetReviewsResponseModel: Codable {
-       
-       let productId : String
-       let locale : String
-       let rating : Int
-       let text : String
+    let productId : String?
+    let locale : String?
+    let rating : Int?
+    let text : String?
+    
+    enum CodingKeys: String, CodingKey {
+        case productId
+        case locale
+        case rating
+        case text
+    }
+
 }
-/*
- RESPONSE YAPISI ;
- {
-   "productId": "HI333",
-   "locale": "tr-TR,tr;q=0.9",
-   "rating": 3,
-   "text": "Yorum Denemesi"
- },
- */

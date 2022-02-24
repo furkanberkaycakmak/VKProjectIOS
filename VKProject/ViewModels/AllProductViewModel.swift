@@ -14,7 +14,7 @@ class AllProductViewModel {
     
     weak var delegate: AllProductViewModelProtocol?
     
-    fileprivate(set) var productAll: [GetProductModel]?
+    fileprivate(set) var productAll: [ProductResponseModel]?
     
     private let networkManager: NetworkManager
     

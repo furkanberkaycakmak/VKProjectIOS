@@ -6,37 +6,76 @@
 //
 
 import UIKit
+import Moya
+
 
 class SingInVC: UIViewController {
+
+    let provider = MoyaProvider<API>()
     
-    private let viewModel = ProductDetailViewModel()
+    private let viewModel = TestingViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        viewModel.delegate = self
-        viewModel.loadAllReviews(reviewsId: "HI333")
         
+        viewModel.delegate = self
+        viewModel.loadProductAll()
+        
+
+        // 2
+    /*  provider.request(.postproduct) { [weak self] result in
+          guard let _ = self else { return }
+
+          // 3
+          switch result {
+          case .success(let response):
+            do {
+              // 4
+              print(try response.mapJSON())
+            } catch {
+              print("fail")
+            }
+          case .failure:
+            // 5
+              print("error")
+          }
+        }*/
+        
+        
+        // Do any additional setup after loading the view.
     }
 
 
 }
 
-/*extension SingInVC: ProductDetailViewModelProtocol {
-    
-    func getProductDetail() {
-        print(viewModel.productDetail?.id as! String)
-    }
-
-}*/
-extension SingInVC: ProductDetailViewModelProtocol{
-    func getProductDetail() {
-        print(viewModel.productDetail)
+extension SingInVC: ViewModelProtocol {
+    func tryFetchGetProductDetails() {
+        print(viewModel.getProductDetail)
     }
     
-    func getReviewsAll() {
-        print(viewModel.reviewsAll)
+    func tryFetchPostProduct() {
+        print(viewModel.postProduct)
     }
+    
+    func tryFetchGetProduct() {
+        print(viewModel.getProduct)
+    }
+    
+    func tryFetchDeleteProduct() {
+        print(viewModel.deleteProduct)
+    }
+    
+    func tryFetchUpdateProduct() {
+        print(viewModel.updateProduct)
+    }
+    
+    func tryFetchPostReviews() {
+        print(viewModel.postReviews)
+    }
+    
+    func tryFetchGetReviewsDetails() {
+        print(viewModel.getReviews)
+    }
+    
     
 }
-

@@ -7,9 +7,12 @@
 
 import Foundation
 
-class DeleteProductModel: Codable {
-
+struct DeleteProductResponseModel: Codable {
     
     let ok : Int
+    
+    enum CodingKeys: String, CodingKey {
+        case ok
+        
+    }
 }
-

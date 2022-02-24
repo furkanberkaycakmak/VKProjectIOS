@@ -11,7 +11,7 @@ import Foundation
 
 class Webservice {
     
-    func getProduct(url: URL, completion: @escaping ([GetProductModel]?) -> ()) {
+    func getProduct(url: URL, completion: @escaping ([ProductResponseModel]?) -> ()) {
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             
@@ -20,7 +20,7 @@ class Webservice {
                 completion(nil)
             } else if let data = data {
                 
-                let productList = try? JSONDecoder().decode([GetProductModel].self, from: data)
+                let productList = try? JSONDecoder().decode([ProductResponseModel].self, from: data)
                 //print(productList)
                 
                 if let productList = productList {
