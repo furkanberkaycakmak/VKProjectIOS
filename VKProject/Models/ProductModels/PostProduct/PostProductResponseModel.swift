@@ -8,7 +8,7 @@
 import Foundation
 
 
-class PostProductModel : Codable {
+class PostProductResponseModel : Codable {
 
     let id : String
     let name : String
