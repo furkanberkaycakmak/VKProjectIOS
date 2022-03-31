@@ -19,8 +19,7 @@ class SingInVC: UIViewController {
         super.viewDidLoad()
         
         viewModel.delegate = self
-        viewModel.loadProductAll()
-        
+        viewModel.postFetchPostProduct()
 
         // 2
     /*  provider.request(.postproduct) { [weak self] result in
@@ -41,8 +40,6 @@ class SingInVC: UIViewController {
           }
         }*/
         
-        
-        // Do any additional setup after loading the view.
     }
 
 
