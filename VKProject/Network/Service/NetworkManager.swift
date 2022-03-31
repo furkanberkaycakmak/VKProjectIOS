@@ -32,7 +32,7 @@ class NetworkManager: Networkable {
     }
 
     func fetchPostProduct(completion: @escaping (Result<PostProductResponseModel, Error>) -> ()) {
-        request(target: .postproduct(id: "BERKAY", name: "NAMEBERKAY", description: "DESCRIPTIONBERKAY", imgUrl: "URL"), completion: completion)
+        request(target: .postproduct(id: "DORUK", name: "NAMEDORUK", description: "DESCRIPTIONDORUK", imgUrl: "URL"), completion: completion)
     }
     
     func fetchDeleteProduct(id: String, completion: @escaping (Result<DeleteProductResponseModel, Error>) -> ()) {
