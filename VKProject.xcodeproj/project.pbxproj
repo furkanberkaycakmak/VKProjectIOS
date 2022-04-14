@@ -346,13 +346,13 @@
 		6377C79E27B59DF300C36ECE /* VKProject */ = {
 			isa = PBXGroup;
 			children = (
-				63BD48CE27BC3D2700C300D4 /* Network */,
 				6377C7A127B59DF300C36ECE /* SceneDelegate.swift */,
 				6377C7A827B59DF300C36ECE /* VKProject.xcdatamodeld */,
 				6377C79F27B59DF300C36ECE /* AppDelegate.swift */,
 				6377C7AB27B59DF500C36ECE /* Assets.xcassets */,
 				6377C7AD27B59DF500C36ECE /* LaunchScreen.storyboard */,
 				6377C7B027B59DF500C36ECE /* Info.plist */,
+				63BD48CE27BC3D2700C300D4 /* Network */,
 				6377C7BE27B5A20500C36ECE /* Models */,
 				6377C7B727B59E8C00C36ECE /* Views */,
 				6377C7B627B59E7E00C36ECE /* ViewModels */,
